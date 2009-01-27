@@ -1,21 +1,22 @@
 package uk.co.markfrimston.mindMap;
 
+import javax.swing.*;
 import java.util.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class DiagramPanel extends Panel implements MouseListener,
+public class DiagramPanel extends JPanel implements MouseListener,
 	MouseMotionListener, KeyListener
 {
 	public static final int NODE_RADIUS = 32;
 	
 	private Diagram diagram;
-	private Frame frame;
+	private JFrame frame;
 	private Node nodeDragged = null;
 	private Node nodeJoinStart = null; 
 	private int mouseX, mouseY;
 	
-	public DiagramPanel(Diagram diagram, Frame frame)
+	public DiagramPanel(Diagram diagram, JFrame frame)
 	{
 		this.frame = frame;
 		this.diagram = diagram;
