@@ -1,0 +1,1 @@
+java -jar mind-map-1.0.jar
